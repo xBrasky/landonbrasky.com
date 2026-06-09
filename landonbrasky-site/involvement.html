@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Landon Brasky — Involvement, certifications, and leadership activities." />
+  <title>Involvement &amp; Certifications — Landon Brasky</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">LB</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="involvement.html" class="active">Involvement</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── PAGE HEADER ── -->
+  <section class="page-header">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="page-header-inner">
+      <p class="eyebrow">Beyond the Classroom</p>
+      <h1 class="page-header-title">Involvement &amp;<br>Certifications</h1>
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATIONS ── -->
+  <section class="section" id="certifications">
+    <div class="section-inner">
+      <p class="section-eyebrow">Certifications</p>
+      <h2 class="section-title">Credentials</h2>
+
+      <div class="cert-card fade-in">
+        <!-- Icon -->
+        <div class="cert-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0
+                 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268
+                 0-2.39-.63-3.068-1.593a3.745 3.745 0 01-3.296-1.043 3.745 3.745 0
+                 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745
+                 0 011.043-3.296 3.745 3.745 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0
+                 2.39.63 3.068 1.593a3.745 3.745 0 013.296 1.043 3.745 3.745 0
+                 011.043 3.296A3.745 3.745 0 0121 12z" />
+          </svg>
+        </div>
+
+        <!-- Info -->
+        <div>
+          <h3 class="cert-name">Lean Six Sigma Green Belt</h3>
+          <p class="cert-date">Certified May 14, 2025</p>
+          <p class="cert-desc">
+            Demonstrated proficiency in DMAIC methodology, statistical analysis, and
+            process improvement techniques for reducing waste and improving quality in
+            manufacturing and operational environments.
+          </p>
+          <a
+            href="https://www.credential.net/143290772"
+            target="_blank"
+            rel="noopener"
+            class="cert-link"
+          >View Credential →</a>
+        </div>
+
+        <div class="cert-img-wrap">
+          <img
+            src="images/lssgb.png"
+            alt="Lean Six Sigma Green Belt Certificate"
+            onerror="this.closest('.cert-img-wrap').style.display='none'"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── INVOLVEMENT ── -->
+  <section class="section" id="involvement">
+    <div class="section-inner">
+      <p class="section-eyebrow">Involvement</p>
+      <h2 class="section-title">Leadership &amp; Activities</h2>
+
+      <div class="involvement-grid">
+
+        <!-- Salt Company -->
+        <div class="inv-card fade-in">
+          <div class="inv-img-wrap" id="scImgWrap">
+            <!-- Add images/salt-company.jpg to display a photo -->
+            <img
+              src="images/salt-company.jpg"
+              alt="Salt Company"
+              onload="document.getElementById('scImgWrap').classList.add('has-img')"
+            />
+            <div class="inv-placeholder">SC</div>
+          </div>
+          <div class="inv-body">
+            <p class="inv-date">2025 — Present</p>
+            <h3 class="inv-role">Student Leader</h3>
+            <p class="inv-org">Salt Company</p>
+            <p class="inv-desc">
+              Leading and discipling fellow students through faith-based community
+              involvement, small groups, and campus outreach.
+            </p>
+          </div>
+        </div>
+
+        <!-- VEX Robotics -->
+        <div class="inv-card fade-in">
+          <div class="inv-img-wrap inv-img-contain" id="vexImgWrap">
+            <img
+              src="images/vex-robotics.jpg"
+              alt="VEX Robotics"
+              onload="document.getElementById('vexImgWrap').classList.add('has-img')"
+            />
+            <div class="inv-placeholder">VR</div>
+          </div>
+          <div class="inv-body">
+            <p class="inv-date">2018 — 2023</p>
+            <h3 class="inv-role">Driver · Builder · Programmer</h3>
+            <p class="inv-org">VEX Robotics</p>
+            <p class="inv-desc">
+              Five years of competitive robotics across multiple technical and leadership
+              roles — designing, building, programming, and driving competition robots.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">LB</div>
+      <p>Landon Brasky &mdash; Industrial Engineering Student</p>
+      <p>Class of 2027</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

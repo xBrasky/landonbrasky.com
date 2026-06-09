@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Landon Brasky — Industrial Engineering student, manufacturing intern, and robotics leader." />
+  <title>Landon Brasky — Industrial Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- cursor spotlight -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="nav">
+    <div class="nav-progress" id="navProgress"></div>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">LB</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="involvement.html">Involvement</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="eyebrow">Industrial Engineer</p>
+        <h1 class="hero-name">Landon<br>Brasky</h1>
+        <p class="hero-sub"><span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span></p>
+        <div class="hero-actions">
+          <a href="#experience" class="btn btn-primary">View Experience</a>
+          <a href="involvement.html" class="btn btn-ghost">Involvement &amp; Certs</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-frame" id="photoFrame">
+          <img
+            src="images/profile.jpg"
+            alt="Landon Brasky"
+            class="photo"
+            onload="document.getElementById('photoFrame').classList.add('has-photo')"
+          />
+          <div class="photo-initials">LB</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="section-eyebrow">About Me</p>
+      <h2 class="section-title">Driven to Solve<br>Hard Problems</h2>
+      <div class="about-layout">
+
+        <div class="about-text fade-in">
+          <p>I'm a driven Industrial Engineering student at Purdue University with a strong desire to grow my skills across manufacturing, automation, and systems optimization.</p>
+          <p>Through hands-on internship experience and years of competitive robotics, I've developed a sharp eye for process improvement and a passion for building things that work better than they did before.</p>
+        </div>
+
+        <div class="stats-grid fade-in">
+          <div class="stat-card">
+            <div class="stat-num" data-target="2027" data-prefix="">2027</div>
+            <div class="stat-label">Expected Graduation</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="2" data-suffix="+">2+</div>
+            <div class="stat-label">Internships Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="5" data-suffix="+">5+</div>
+            <div class="stat-label">Years in Robotics</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num stat-text">Green Belt</div>
+            <div class="stat-label">Lean Six Sigma Certified</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── EDUCATION ── -->
+  <section class="section" id="education">
+    <div class="section-inner">
+      <p class="section-eyebrow">Education</p>
+      <h2 class="section-title">Academic Background</h2>
+
+      <div class="edu-card fade-in">
+        <div class="edu-left">
+          <div class="edu-degree">B.S. Industrial Engineering</div>
+          <div class="edu-school">Purdue University</div>
+          <div class="edu-tags">
+            <span class="tag">Manufacturing Minor</span>
+            <span class="tag">Management Minor</span>
+          </div>
+        </div>
+        <div class="edu-right">
+          <img src="images/Purdue-University-Logo.jpg" alt="Purdue University" class="edu-logo" />
+          <div class="edu-grad">Class of 2027</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── SKILLS ── -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <p class="section-eyebrow">Expertise</p>
+      <h2 class="section-title">Skills &amp; Tools</h2>
+      <div class="skills-layout">
+
+        <div class="skill-group fade-in">
+          <h3 class="skill-group-title">Engineering</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Lean Six Sigma</span>
+            <span class="skill-tag">DMAIC</span>
+            <span class="skill-tag">Process Improvement</span>
+            <span class="skill-tag">Material Flow</span>
+            <span class="skill-tag">Performance Benchmarking</span>
+            <span class="skill-tag">Site Optimization</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <h3 class="skill-group-title">Technology</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">AutoCAD</span>
+            <span class="skill-tag">ERP Systems</span>
+            <span class="skill-tag">AMR Systems</span>
+            <span class="skill-tag">AI Agents</span>
+            <span class="skill-tag">Microsoft Office</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <h3 class="skill-group-title">Robotics</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">VEX Robotics</span>
+            <span class="skill-tag">Robot Design</span>
+            <span class="skill-tag">Programming</span>
+            <span class="skill-tag">Competition Strategy</span>
+            <span class="skill-tag">Autonomous Systems</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── EXPERIENCE ── -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <p class="section-eyebrow">Work Experience</p>
+      <h2 class="section-title">Where I've Worked</h2>
+
+      <div class="timeline">
+
+        <!-- Allegion -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <p class="timeline-date">May 2025 — Present</p>
+                <h3 class="timeline-role">Advanced Manufacturing Engineering Intern</h3>
+                <div class="company-row">
+                  <img src="images/doc_logo_ALLE-H_000.png" alt="Allegion" class="company-logo" />
+                </div>
+              </div>
+              <div class="timeline-badge">Current</div>
+            </div>
+            <ul class="timeline-list">
+              <li>Developed Autonomous Mobile Robot proof of concept for automated material delivery</li>
+              <li>Built and tested AI Agent solutions for production use</li>
+              <li>Led site optimization projects focused on material flow and performance benchmarking</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Trucent -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <p class="timeline-date">May — August 2024</p>
+                <h3 class="timeline-role">Technical Projects Intern</h3>
+                <div class="company-row">
+                  <img src="images/trucent-cpr-logo.png" alt="Trucent" class="company-logo" />
+                </div>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Drove aftermarket product optimization to improve performance and manufacturability</li>
+              <li>Improved spindle fitting processes through custom tool manufacturing</li>
+              <li>Integrated workflows with ERP systems to streamline operations</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── CONTACT ── -->
+  <section class="section" id="contact">
+    <div class="section-inner contact-inner">
+      <p class="section-eyebrow">Get In Touch</p>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-sub">Open to internship opportunities, collaborations, and conversations about engineering and technology.</p>
+
+      <div class="contact-cards">
+
+        <a href="https://www.linkedin.com/in/landon-brasky-78458227b" target="_blank" rel="noopener" class="contact-card fade-in">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">landon-brasky</div>
+        </a>
+
+        <a href="Resume/Landon_Resume_12_12_25.pdf" target="_blank" class="contact-card contact-card-accent fade-in">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+          </div>
+          <div class="contact-label">Resume</div>
+          <div class="contact-value">Download PDF</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">LB</div>
+      <p>Landon Brasky &mdash; Industrial Engineering Student at Purdue University</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/landon-brasky-78458227b" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
